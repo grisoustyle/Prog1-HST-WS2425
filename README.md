@@ -1,13 +1,13 @@
 # Grundlagen der Programmierung (PO2016) / Programmierung 1 (PO2024)
 ## Wintersemester 2024/2025
 
-##### Legende
+#### Legende
 - ***V*** : Vorlesung
 - ***T*** : Tutorial
 - ***K*** : Klausur/Klausurvorbereitung
 - ***L*** : Lösung
 
-##### Gliederung
+#### Gliederung
 - ***Altklausuren*** : Alle Altklausuren (WS2223 - WS2324)
 - ***Blätter Tut*** : Alle Übungsblätter der Tutorien (1-6)
 - ***Blätter VL*** : Alle wöchentlichen Übungsblätter
