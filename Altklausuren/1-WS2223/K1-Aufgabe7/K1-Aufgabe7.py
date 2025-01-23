@@ -1,11 +1,10 @@
 def palindromcheck(wort):
     wort = wort.lower()
-    if wort == "":
+
+    if len(wort)<=1:
         return True
-    if len(wort)%2!=0:
-        return False
     if wort[0] == wort[-1]:
-        return True and palindromcheck(wort[1:-1])
+        return palindromcheck(wort[1:-1])
     else:
         return False
 
@@ -14,4 +13,5 @@ def palindromcheck(wort):
 print(wort[0],wort[-1])
 print(wort[1:-1])'''
 
-print(palindromcheck("LageRredgal"))
+print(palindromcheck("LageRregal"))
+print(palindromcheck("Reliefpfeiler"))
