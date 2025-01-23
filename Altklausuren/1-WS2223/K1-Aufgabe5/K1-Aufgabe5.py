@@ -22,5 +22,17 @@ def codieren(wort,shift):
         verschlüsselt += alphabetstr[neu_index]
     print(verschlüsselt)
 
-codieren("testwort",1)
+#codieren("testwort",1)
 
+def decodieren(wort,shift):
+    entschlüsselt = ""
+    for buchstabe in wort: #t
+            
+        alt_index = alphabetstr.index(buchstabe)
+        #print(f"altindex {alt_index}")
+        neu_index = (alt_index-shift)%26
+        #print(f"neuindex {neu_index}")
+        entschlüsselt += alphabetstr[neu_index]
+    print(entschlüsselt)
+
+decodieren("uftu",1)

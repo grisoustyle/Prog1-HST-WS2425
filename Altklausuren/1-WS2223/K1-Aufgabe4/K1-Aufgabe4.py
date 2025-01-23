@@ -10,4 +10,4 @@ def raute(breite):
         print((spacer*" ") + i*"X")
         spacer +=1
         
-raute(9)
+raute(19)
