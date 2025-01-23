@@ -1,4 +1,5 @@
 def palindromcheck(wort):
+    wort = wort.lower()
     if wort == "":
         return True
     if len(wort)%2!=0:
@@ -13,4 +14,4 @@ def palindromcheck(wort):
 print(wort[0],wort[-1])
 print(wort[1:-1])'''
 
-print(palindromcheck("lagerregal"))
+print(palindromcheck("LageRredgal"))
