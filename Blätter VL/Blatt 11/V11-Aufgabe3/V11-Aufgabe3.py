@@ -21,6 +21,6 @@ except ValueError:
 except ZeroDivisionError:
     print("Fehler: Division durch Null ist nicht erlaubt!")
 else:
-    print(f"Ergebnis: {result}")
+    print(f"Keine Fehler aufgetreten. Ergebnis: {result}")
 finally:
     print("Programm beendet.")
