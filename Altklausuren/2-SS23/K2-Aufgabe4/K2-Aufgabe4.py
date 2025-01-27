@@ -20,9 +20,3 @@ def stern(breite):
 
 #print(7//2)
 stern(9)
-
-
-'''for i in range(breitenkopie//2-1,-1,-1):
-            mitte = breitenkopie//2
-            print(i*" " + "X" + (mitte-1)*" " + "X" + (mitte-1)*" "+"X")
-            breitenkopie +=2'''
