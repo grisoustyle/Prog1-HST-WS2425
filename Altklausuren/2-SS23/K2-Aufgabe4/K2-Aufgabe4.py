@@ -5,19 +5,15 @@ def stern(breite):
         if breite%2 == 0:
             raise Exception ("Breite muss ungerade Zahl sein!")
         
-        breitenkopie = breite
+        mitte = breite // 2
 
-        for i in range(0,breite//2):
-            mitte = breite//2
-            print(i*" " + "X" + (mitte-1)*" " + "X" + (mitte-1)*" "+"X")
-            breite -=2
+        for i in range(mitte):
+            print(' ' * i + 'X' + ' ' * (mitte - 1 - i) + 'X' + ' ' * (mitte - 1 - i) + 'X')
 
-        print(breitenkopie*"X")
+        print('X' * breite)
 
-        for i in range(breitenkopie//2-1,-1,-1):
-            mitte = breitenkopie//2
-            print(i*" " + "X" + (mitte-1)*" " + "X" + (mitte-1)*" "+"X")
-            breitenkopie +=2
+        for i in range(mitte):
+            print(' ' * (mitte - 1 - i) + 'X' + ' ' * i + 'X' + ' ' * i + 'X')
 
     except Exception as ex:
         print(ex)
@@ -26,10 +22,7 @@ def stern(breite):
 stern(9)
 
 
-'''breite = breitenkopie
-for i in range(breite // 2 -1, -1, -1):
-    #print(i)
-    mitte = breite // 2
-    #print(f"mitte{mitte}")
-    print(i * " " + "X" + (mitte - 3) * " " + "X" + (mitte - 3) * " " + "X")
-    breite += 2'''
+'''for i in range(breitenkopie//2-1,-1,-1):
+            mitte = breitenkopie//2
+            print(i*" " + "X" + (mitte-1)*" " + "X" + (mitte-1)*" "+"X")
+            breitenkopie +=2'''
