@@ -1,10 +1,10 @@
 def div_lin(a,b):
-    ergebnis = a
     step = 0.001
+    näherung = 0
     
-    while b*step<=a:
-        step+=0.001
-    return step
+    while b*näherung<=a:
+        näherung+=step
+    return näherung
 
 print(div_lin(10,2))
 
