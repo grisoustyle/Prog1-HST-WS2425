@@ -2,7 +2,7 @@ def div_lin(a,b):
     step = 0.001
     näherung = 0
     
-    while b*näherung<=a:
+    while b*näherung <= a:
         näherung+=step
     return näherung
 
