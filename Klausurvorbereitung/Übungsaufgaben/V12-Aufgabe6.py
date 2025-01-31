@@ -4,16 +4,17 @@ def stern(breite):
             raise Exception ("Mindestbreite unterschritten")
         if breite%2 == 0:
             raise Exception ("Breite muss ungerade Zahl sein!")
-        
-        mitte = breite // 2
+        zähler = 1
+        for y in range(breite):
+            zeilenstr =""
+            for x in range(breite):
+                if (x==y) or ((x+y)==breite-1) or (x==breite//2) or (y==breite//2):
+                    zeilenstr+=str(zähler)
+                    zähler = (zähler+1)%10
 
-        for i in range(mitte):
-            print(' ' * i + 'X' + ' ' * (mitte - 1 - i) + 'X' + ' ' * (mitte - 1 - i) + 'X')
-
-        print('X' * breite)
-
-        for i in range(mitte):
-            print(' ' * (mitte - 1 - i) + 'X' + ' ' * i + 'X' + ' ' * i + 'X')
+                else:
+                    zeilenstr+=" "
+            print(zeilenstr)
 
     except Exception as ex:
         print(ex)
