@@ -5,7 +5,7 @@ deutsche_buchstabiertafel = ("Anton", "Berta", "Cäsar", "Dora", "Emil",
 
 def suche_bin(wort):
     untereGrenze = 0
-    obereGrenze = len(deutsche_buchstabiertafel)
+    obereGrenze = len(deutsche_buchstabiertafel)-1
 
     näherung = untereGrenze+(obereGrenze-untereGrenze)//2
     iterationen = 1
