@@ -5,6 +5,7 @@ def stern(breite):
         if breite%2 == 0:
             raise Exception ("Breite muss ungerade Zahl sein!")
         zähler = 1
+        
         for y in range(breite):
             zeilenstr =""
             for x in range(breite):
