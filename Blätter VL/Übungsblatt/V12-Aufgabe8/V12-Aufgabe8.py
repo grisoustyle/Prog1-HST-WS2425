@@ -2,13 +2,13 @@ import math
 
 def rad_lin(v):
     step = 0.001
-    r = 0
+    schätzung = 0
     
-    while abs((4/3)*(r**3)*math.pi)-v <= step: #lieber mit abs() <= step/epsilon arbeiten anstatt () <= V
-        r+=step
-    return r
+    while abs((4/3)*(schätzung**3)*math.pi)-v <= step: #lieber mit abs() <= step/epsilon arbeiten anstatt () <= V
+        schätzung+=step
+    return schätzung
 
-print(rad_lin(5))
+print(rad_lin(100))
 
 def rad_bin(v):
     untereGrenze = 0
@@ -27,4 +27,4 @@ def rad_bin(v):
         r = untereGrenze + (obereGrenze-untereGrenze)/2
     return r
 
-print(rad_bin(5))
+print(rad_bin(100))
