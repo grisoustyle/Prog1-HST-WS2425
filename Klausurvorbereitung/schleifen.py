@@ -23,4 +23,17 @@ def sternchen(n):
     for zeile in range(1,n+1):
         print("*"*zeile)
 
-sternchen(3)
+def summe2(n):
+    ergebnis = 0
+    for zahl in range(0,n+1,2):
+        ergebnis+=zahl
+    return ergebnis
+
+def list_filter(liste):
+    neue_liste =[]
+    for element in liste:
+        if element%2==0:
+            neue_liste.append(element)
+    return neue_liste
+
+print(list_filter([1, 2, 3, 4, 5, 6]))
