@@ -20,4 +20,4 @@ def haus(breite,höhe):
     except Exception as ex:
         print(ex)
 
-haus(17,7)
+haus(5,3)
