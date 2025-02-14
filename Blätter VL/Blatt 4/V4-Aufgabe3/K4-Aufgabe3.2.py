@@ -10,11 +10,20 @@ def dreieck_kreuz(breite):
         for i in range(breite):
             print((breite_punkte+i)*". " + "* "*(breite-i))
 
-        #Kreuz
+        print("")
         
+        #Kreuz
+        for y in range(breite):
+            zeile=""
+            for x in range(breite):
+                if (x==y) or (x+y)==breite-1:
+                    zeile+="* "
+                else:
+                    zeile+=". "
+            print(zeile)
+
 
     except Exception as ex:
         print(ex)
 
 dreieck_kreuz(7)
-
