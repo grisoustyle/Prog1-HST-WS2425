@@ -30,11 +30,11 @@ def quadrat(breite):
     for y in range(breite):
         zeile = ""
         for x in range (breite):
-            if (x==0)or (x==breite-1) or (y==0) or (y==breite-1):
+            if (x==0)or (x==breite-1) or (y==0) or (y==breite-1) or ((x%2==0) and (y%2==0)):
                 zeile+="X"
             else:
                 zeile+=" "
         print(zeile)
     return
 
-quadrat(10)
+quadrat(19)
